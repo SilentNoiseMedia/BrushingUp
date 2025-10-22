@@ -1,0 +1,778 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+  /* Keep your existing font-family property */
+  font-family: Poppins;
+
+  /* === REPLACE YOUR BACKGROUND-COLOR WITH THIS === */
+  background-color: #111; /* Fallback for older browsers */
+  background-image: linear-gradient(to bottom, #222, #252525);
+  background-repeat: no-repeat; /* Prevents the gradient from tiling */
+  background-attachment: fixed; /* Makes the gradient stay in place on scroll */
+  min-height: 100vh; /* Ensures the body is at least the full viewport height */
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+🔴LEVEL 1
+🟠LEVEL 2
+🟡LEVEL 3
+🟣LEVEL 4
+🔵LEVEL 5
+
+⭐DISPLAYED CONTENT
+*/
+
+/* - - - - - - - - - - - - - - */
+/* N A V I G A T I O N   B A R */
+/* - - - - - - - - - - - - - - */
+.l1-Navbar { /*🔴*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #222;
+  padding: 1rem 2rem;
+  position: relative;
+  border-radius: 0.5em;
+  margin: 1rem;
+  z-index: 1000;
+}
+
+.l2-logo { /*🟠*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 1em;
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.l2-logo img { /*🟡*/
+  width: 100px;
+  min-width: 300px;
+  height: auto;
+}
+
+.l2-nav { /*🟠*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  list-style: none;
+  gap: 4em;
+  border-radius: 0.75em;
+  margin: 1em;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.l3-nav_options { /*🟡*/
+  margin: 0.25em;
+  /*padding: 0.05em;*/
+  border: 2px solid #4D4D4D;
+  font-size: 2em;
+  border-radius: 0.25em;
+  color: white;
+  font-weight: 600;
+}
+
+.l3-nav_options a:hover { /*🟡*/
+  background: #ffcc33;
+  color: #333;
+}
+
+.l2-nav a { /*🟣*/
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.60em;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.25em;
+  transition: color 0.2s ease-out;
+}
+
+/*-*/
+/* - - - - - - - - - - - - */
+/* L E V E L  1  C L A S S */
+/* - - - - - - - - - - - - */
+/*-*/
+
+.l1-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.25em;
+  /*border: 0.5em solid #121212;*/
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+/*- -*/
+/* - - - - - - - - - - - - */
+/* L E V E L  2  C L A S S */
+/* - - - - - - - - - - - - */
+/*- -*/
+
+.l2-frame {
+	margin: 0.5em;
+	padding: 0.5em;
+  border: 1.5px solid #2B2B2B;
+  border-radius: 0.75em;
+}
+
+/*- - -*/
+/* - - - - - - - - - - - - */
+/* L E V E L  3  C L A S S */
+/* - - - - - - - - - - - - */
+/*- - -*/
+
+.l3-content {
+  /*border: solid 1px red;*/
+}
+
+/*- - - -*/
+/* - - - - - - - - - - - - */
+/* L E V E L  4  C L A S S */
+/* - - - - - - - - - - - - */
+/*- - - -*/
+
+.l4-btn {
+  font-size: 0.75em;
+  margin: 0.5em;
+  padding: 0.45em;
+  cursor: pointer;
+  border-radius: 0.40em;
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* H E R O  I D */
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+
+/*- -*/
+
+#l2-hero {
+  margin: 0.5em;
+  font-size: 2em;
+  color: red;
+  position: relative;
+  background-image:
+	linear-gradient(to right, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.6)),
+	url('https://i.imghippo.com/files/Mvng5925zps.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ARCHIVED FOR TESTING
+#l2-hero {
+  margin: 0.5em;
+  font-size: 2em;
+  color: red;
+}
+*/
+
+/*- - - -*/
+#l4-hero_headline {
+  color: #dddddd;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/*- - - -*/
+#l4-hero_subheadline {
+  color: #FFCC33;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/*- - - -*/
+#l4-hero-btn-contactus {
+  background-color: #FFCC33;
+  color: #222;
+  font-weight: 700;
+  border: 1px solid #fade23;
+}
+
+/*- - - - | */
+#l4-hero-btn-contactus:hover {
+  background-color: #f5d67b;
+  color: #383838;
+  border: 1px solid #fff;
+}
+
+/*- - - -*/
+#l4-hero-btn-learnmore {
+  background-color: hsl(45, 100%, 60%);
+  color: #333;
+  font-weight: 700;
+  border: 1px solid #fade23;
+}
+
+/*- - - - | */
+#l4-hero-btn-learnmore:hover {
+  background-color: #f5d67b;
+  color: #383838;
+  border: 1px solid #fff;
+}
+
+/*- - - -*/
+#l4-hero_list {
+  list-style: none;
+  color: #DDD;
+  font-size: 0.5em
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* S E R V I C E S  I D */
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+
+/*- -*/
+#l2-services {
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+/*- - - -*/
+#l4-services_headline {
+  color: #eeeeee;
+  font-size: 1.00em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+#l4-services_provided {
+  color: white;
+  font-size: 0.75em;
+  list-style-type: "";
+}
+
+
+#l4-services_provided li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+#l4-services_provided li:before {
+
+}
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* R E V I E W S  I D */
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+
+/*- -*/
+#l2-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  list-style: none;
+  gap: 4em;
+  margin: 0.50em;
+  padding: 0;
+  font-size: 2em;
+  color: red;
+}
+
+/*- - - -*/
+#l4-reviews_headline {
+  color: #eeeeee;
+  font-size: 1.00em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+#l4-feedback_frame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  font-weight: 400;
+  font-size: 0.6em;
+  color: #FFF;
+  list-style: none;
+  margin: 0.25em;
+  padding: 0.5em;
+}
+
+.l5-feedback_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center children horizontally */
+  text-align: center;   /* Center text inside children */
+  margin: 0.25em;
+  padding: 0.25em;
+  /*border: 1px solid grey;*/
+  border-radius: 0.5em;
+}
+
+.l5-feedback_item .stars {
+  font-size: 1.5em;    /* Optional: make stars bigger */
+  margin-bottom: 0.25em;
+}
+
+.review-text {
+  text-align: center;       /* align review text center under stars */
+  font-size: 1em;           /* readable size, adjust as needed */
+  font-weight: 400;         /* normal font weight */
+  color: #FFF;              /* white or your theme color */
+  margin: 0;                /* remove extra margin */
+  padding: 0;               /* keep padding controlled by container */
+  line-height: 1.4;         /* improve readability */
+}
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* L O C A T I O N  I D */
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+
+/*- -*/
+#l2-location {
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+/*- - - -*/
+#l4-location-frame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+/*- - - -*/
+#l4-location_headline {
+  color: #eeeeee;
+  font-size: 1.00em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+/*- - - - -*/
+
+#l5-location-left-top-frame,
+#l5-location-right-bottom-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.75em;
+  color: #FFF;
+  flex: 1 1 300px;   
+  max-width: 450px; 
+  margin: 1em 0.25em 0.25em 0.25em;
+  padding: 0.25em;
+}
+
+/*- - - - - -*/
+#l6-address {
+  display: flexbox;
+  justify-content: space-between;
+  align-content: center;
+  color: grey;
+  font-size: 20px;
+  width: 100%;
+  text-decoration: none;
+  /*border: solid maroon;*/
+}
+
+.address-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.25s ease, text-decoration 0.25s ease;
+  cursor: pointer;
+}
+
+.address-link:hover {
+  color: #FFD54F;
+  text-decoration: underline;
+}
+
+#l5-location-left-top-frame a {
+  /*color: gold;*/
+}
+
+.l7-map-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0.25em;
+  object-fit: contain;
+  border-radius: 8px;
+  overflow: hidden; /* ensures overlay doesn’t spill outside */
+}
+
+.l7-map-button {
+  transition: box-shadow 0.3s ease;
+}
+
+.l7-map-button:hover {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
+.l7-map-button:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+.l7-map-button::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top/right/bottom/left: 0 */
+  background: rgba(255, 255, 255, 0.2); /* light transparent overlay */
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.l7-map-button:hover::after {
+  opacity: 1;
+}
+
+.map-image {
+
+  border-radius: 12px;   /* adjust to taste */
+  display: block;        /* removes inline-gap if inside flex/grid */
+  width: 100%;
+  max-width: 100%;       /* keep responsiveness */
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+a:hover .map-image {
+  opacity: 0.85;
+}
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* C O N T A C T  I D */
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+
+/*- -*/
+#l2-contact {
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+#l2-contact {
+  padding-bottom: 0.5em;   /* reduce if you want less bottom padding */
+}
+
+/*- - - -*/
+.l4-bottom-buttons {
+  /*display: flex;*/
+  /*gap: 1rem; /* spacing between buttons */
+}
+
+/*- - - -*/
+#l4-contact_headline {
+  color: #eeeeee;
+  font-size: 1.00em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+/*- - - -*/
+#l4-contact-frame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  margin: 1em;
+  /*border: 1px solid red;*/
+}
+
+/*- - - - -*/
+.l5-contact-frame {
+  font-size: 20px;
+  color: white;
+  padding: 0.25em;
+  margin: 0.25 em;
+}
+
+/*- - - - -*/
+#l5-call-button {
+  font-size: 0.75em;
+  margin: 0.25em;
+  padding: 0.45em;
+  cursor: pointer;
+  border-radius: 0.40em;
+  background-color: #FFCC33;
+  color: #222;
+  font-weight: 700;
+  border: 1px solid #fade23;
+}
+
+/*- - - - -*/
+#l5-email-button {
+  font-size: 0.75em;
+  margin: 0.25em;
+  padding: 0.45em;
+  cursor: pointer;
+  border-radius: 0.40em;
+  background-color: #FFCC33;
+  color: #222;
+  font-weight: 700;
+  border: 1px solid #fade23;
+}
+
+/*- - - - -*/
+#l5-call-button:hover {
+  background-color: #f5d67b;
+  color: #383838;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+/*- - - - -*/
+#l5-email-button:hover {
+  background-color: #f5d67b;
+  color: #383838;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.l4-bottom-buttons .l5-contact-frame {
+  flex: 1 1 200px;
+  max-width: 220px;
+  min-width: 140px;
+  text-align: center;
+  padding: 0.75em 0;
+  border-radius: 6px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.l4-bottom-buttons {
+  display: flex;        /* enable flex to remove vertical stacking */
+  justify-content: center;
+  gap: 1rem;            /* space between buttons */
+  margin-bottom: 0;     /* ensure no bottom collapse */
+}
+
+.l5-contact-frame {
+  margin: 0.25em;       /* fix the typo (no space) */
+}
+
+
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* F O O T E R */
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+
+footer {
+  position: relative;
+  margin: -5em;
+  color: #CCC;
+  text-align: center;
+}
+
+.l2-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em; /* spacing between icons */
+  padding: 1em 0;
+  flex-wrap: wrap; /* helps on small screens */
+}
+
+
+.footer-ul li {
+  list-style: none;
+}
+
+.footer-ul li a {
+  width: clamp(3em, 4vw, 4em);     /* min 2em, scale with viewport, max 3.5em */
+  height: clamp(3em, 4vw, 4em);
+  background-color: #fff;
+  text-align: center;
+  line-height: 100%;
+  font-size: clamp(1rem, 2vw, 1.75rem); /* scales icon size smoothly */
+  margin: 0 clamp(0.25em, 1vw, 0.75em);
+  display: flex; /* center the icon nicely */
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+
+.footer-ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.footer-ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.footer-ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.footer-ul li a:hover:before {
+  top: 0;
+}
+
+.footer-ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.footer-ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+
+.footer-ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+
+.footer-ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+/* https://codepen.io/ephs23/pen/NeQZGx*/
+
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+/* M E D I A  Q U E R Y | D Y N A M I C  R E S I Z I N G */
+
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+/* L O C A T I O N */
+
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+}
+
+  .l2-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem 0;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+  .l2-nav-menu.show {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+  .l2-nav li {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+  /* Animate hamburger to an X */
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+
+  #l5-location-left-top-frame {
+    align-items: center;
+    text-align: center;
+  }
+  
+  footer {
+    margin: 0;
+  }
+ 
+}
+
+
+@media (max-width: 430px) {
+  
+}
+
+
+
+
+
+
